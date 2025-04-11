@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+    body {
+      font-family: 'Fredoka One', cursive;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: #333;
+    }
+    .bg{
+        background: url("minonss.webp") no-repeat center center/cover;
+        filter: blur(2.5px);
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        left: 0;
+    }
+
+    .game-container {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+      border: 5px solid #fada0c;
+    }
+
+    h1 {
+      color: #0033a0;
+      font-size: 2rem;
+    }
+
+    input[type="number"] {
+      padding: 0.6rem;
+      width: 80%;
+      font-size: 1rem;
+      margin-top: 1rem;
+      border: 2px solid #fada0c;
+      border-radius: 8px;
+      outline: none;
+    }
+
+    button {
+      padding: 0.6rem 1.2rem;
+      margin-top: 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #submitBtn {
+      background-color: #0033a0;
+      color: #fff;
+      font-family: 'Fredoka One', cursive;
+    }
+
+    #submitBtn:hover {
+      background-color: #052369;
+    }
+
+    #restartBtn {
+      display: none;
+      background-color: #fada0c;
+      color: #0033a0;
+      font-family: 'Fredoka One', cursive;
+      font-size: 1.2rem;
+    }
+
+    #restartBtn:hover {
+      background-color: #ffe83c;
+    }
+
+    #message {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+
+    canvas {
+      pointer-events: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+    }

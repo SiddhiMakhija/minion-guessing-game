@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minion Guess Game 🍌</title>
+  <link rel="shortcut icon" href="minonss.webp" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="game-container">
+    <h1>🍌 Minion Guessing Game 👓</h1>
+    <input type="number" id="userGuess" min="0" max="9" placeholder="0 - 9" />
+    <br />
+    <button id="submitBtn" onclick="checkGuess()">Guess</button>
+    <p id="message"></p>
+    <button id="restartBtn" onclick="restartGame()">🔁 Play Again</button>
+  </div>
+
+  <!-- Confetti CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
+  <canvas id="confetti-canvas"></canvas>
+  <!-- JS of the page -->
+  <script src="script.js"></script>
+</body>
+</html>
